@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  font-family: "Mulish", sans-serif;
+
+  --color-base-white: #f9f4fb;
+  --color-base-pink: #b52184;
+  --color-base-blue: #312d64;
+  --color-base-linear-gradient-1: linear-gradient(
+    122deg,
+    #343193 0%,
+    #302c63 100%
+  );
+  --color-base-linear-gradient-2: linear-gradient(
+    122deg,
+    #b52184 0%,
+    #85135f 100%
+  );
+}
+
+body {
+  background: var(--color-base-white);
+}
+
+#app {
+  max-width: 43rem;
+  margin: auto;
+}
+
+header {
+  padding: 0 3.2rem;
+  text-align: center;
+}
+
+header img {
+  width: 36rem;
+  height: 37rem;
+}
+
+header h1 {
+  color: var(--color-base-pink);
+  font-size: 3.2rem;
+  font-weight: 900;
+  word-wrap: break-word;
+
+  margin-top: 1.7rem;
+}
+
+header p {
+  color: var(--color-base-blue);
+  font-size: 2rem;
+  font-weight: 600;
+  word-wrap: break-word;
+
+  margin: 0.5rem 0 3.5rem;
+}
+
+header svg {
+  color: var(--color-base-pink);
+  width: 6rem;
+  height: 10rem;
+
+  border: solid 4px var(--color-base-pink);
+  border-radius: 999px;
+
+  margin-bottom: 8rem;
+
+  animation: toPoint 3s infinite alternate-reverse;
+}
+
+.boxInfos {
+  background: var(--color-base-linear-gradient-1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 5rem;
+
+  width: 100%;
+}
+
+.box {
+  background: var(--color-base-white);
+  padding: 2.6rem;
+  border-radius: 2rem;
+
+  animation: appear 0.8s 0.4s backwards;
+}
+
+.box:nth-child(1) img {
+  animation-name: planetRotate;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.box:nth-child(2) img {
+  animation-name: planetRotate;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+.box:nth-child(3) img {
+  animation-name: planetRotate;
+  animation-duration: 13s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.box h1 {
+  color: var(--color-base-pink);
+  font-size: 3rem;
+  font-weight: 900;
+  word-wrap: break-word;
+
+  margin: 3rem 0 2rem;
+}
+
+.box p {
+  color: var(--color-base-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+#formContact {
+  background: var(--color-base-white);
+  padding: 7.2rem 4rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 4.3rem;
+  border: none;
+}
+
+fieldset h1 {
+  color: var(--color-base-pink);
+  font-size: 3rem;
+  font-weight: 900;
+  word-wrap: break-word;
+}
+
+.formInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid var(--color-base-blue);
+  border-radius: 1.6rem;
+
+  color: var(--color-base-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  word-wrap: break-word;
+}
+
+#valeuName {
+  background: url(./assets/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#valeuEmail {
+  background: url(./assets/email.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-base-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  word-wrap: break-word;
+  font-family: "Mulish", sans-serif;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--color-base-pink);
+}
+
+.form img {
+  display: none;
+}
+
+#button {
+  background: var(--color-base-linear-gradient-1);
+  padding: 1.6rem;
+
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  line-height: 1.6rem;
+  word-wrap: break-word;
+}
+
+#button:hover {
+  background: var(--color-base-linear-gradient-2);
+}
+
+#button:focus {
+  border: none;
+}
+
+footer {
+  padding: 3.2rem 1.6rem;
+  width: 100%;
+  background: var(--color-base-linear-gradient-1);
+
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+/*Responsividade*/
+@media (min-width: 450px) {
+  #app {
+    max-width: fit-content;
+  }
+}
+
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    text-align: start;
+  }
+
+  header img {
+    width: 62rem;
+    height: 62rem;
+  }
+
+  header h1 {
+    font-size: 5.8rem;
+    margin-top: 15rem;
+  }
+
+  header p {
+    font-size: 3.2rem;
+
+    margin: 0.5rem 0 15rem;
+  }
+
+  header svg {
+    padding: 0;
+  }
+
+  .boxInfos {
+    display: flex;
+    flex-direction: row;
+    padding: 6.4rem 11.1rem;
+    gap: 6rem;
+  }
+
+  .box {
+    padding: 3.2rem;
+  }
+
+  .box h1 {
+    font-size: 3.6rem;
+
+    margin: 4rem 0 2.4rem;
+  }
+
+  .box p {
+    font-size: 2rem;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form img {
+    display: block;
+  }
+
+  #formContact {
+    padding: 9.5rem 10rem;
+  }
+
+  #formContact h1 {
+    font-size: 4.2rem;
+  }
+
+  input,
+  textarea {
+    width: 64rem;
+  }
+}
+/*Animação*/
+/*Seta animada*/
+@keyframes toPoint {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*Planetas girandos*/
+@keyframes planetRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*As caixas box aparecendo*/
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore sem limites</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <img
+          src="./assets/astronaut.png"
+          alt="Ilustração de uma astronauta no espaço."
+        />
+        <div class="infosHeader">
+          <h1>Explore sem limites</h1>
+          <p>Porque o aprendizado é contínuo</p>
+          <i data-lucide="move-down"></i>
+        </div>
+      </header>
+      <section class="boxInfos">
+        <div class="box">
+          <img src="./assets/planeta1.png" alt="Planeta laranjado." />
+          <h1>Não pare nunca</h1>
+          <p>
+            Se você deseja ter sucesso nos estudos, é fundamental que você adote
+            uma mentalidade de "não pare nunca". Estudar de forma consistente e
+            contínua é a chave para o progresso e a conquista de seus objetivos.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/planeta2.png" alt="Planeta azulado." />
+          <h1>Só volta</h1>
+          <p>
+            Se você parou ou perdeu o ritmo em alguma atividade ou projeto,
+            saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias
+            podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/planeta3.png" alt="Planeta rosado." />
+          <h1>Siga seu ritmo</h1>
+          <p>
+            Avançar pouco a pouco mantém progresso constante em objetivos,
+            evitando parar ou desistir. Mesmo pequenos passos nos aproximam do
+            destino e motivam a continuidade. Não subestime o poder de cada ação
+            rumo ao objetivo final.
+          </p>
+        </div>
+      </section>
+
+      <section class="form">
+        <form id="formContact">
+          <fieldset>
+            <h1>Entre em contato</h1>
+            <div class="formInfos">
+              <input type="text" id="valueName" placeholder="Seu nome" />
+
+              <input type="email" id="valueEmail" placeholder="Email" />
+
+              <textarea
+                id="valeuInfo"
+                cols="30"
+                rows="10"
+                placeholder="Digite sua mensagem aqui..."
+              ></textarea>
+
+              <input id="button" type="button" value="Enviar mensagem" />
+            </div>
+          </fieldset>
+        </form>
+        <img
+          src="./assets/fundo.png"
+          alt="Fundo branco com estrelas cor de rosa."
+        />
+      </section>
+
+      <footer>
+        <a href="https://www.rocketseat.com.br/"
+          >© 2023 - Rocketseat Explorer</a
+        >
+      </footer>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons()
+    </script>
+  </body>
+</html>
