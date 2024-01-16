@@ -6,7 +6,8 @@ Criação de um site web seguindo as instruções do design do figma. Esse proje
 
 <p align="center">
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>
+  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#⚙️-funcionalidades">
 </p>
 
 <br>
@@ -28,9 +29,7 @@ O Explore sem limites é um projeto que tem como objetivo ensinar os fundamentos
 
 - [Acesse o projeto finalizado, online](https://jp-xaxa.github.io/explore-intensivao/)
 
-<h1 align="center">
-  Funcionalidades
-</h1>
+## ⚙️ Funcionalidades
 
 - Responsividade (MobFirst)
 - Animações CSS
