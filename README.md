@@ -7,7 +7,7 @@ Criação de um site web seguindo as instruções do design do figma. Esse proje
 <p align="center">
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#⚙️-funcionalidades">
+  <a href="#⚙️-funcionalidades">Funcionalidades</a>
 </p>
 
 <br>
