@@ -6,8 +6,7 @@ Criação de um site web seguindo as instruções do design do figma. Esse proje
 
 <p align="center">
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🔖-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#💻-projeto">Projeto</a>
 </p>
 
 <br>
@@ -35,9 +34,3 @@ O Explore sem limites é um projeto que tem como objetivo ensinar os fundamentos
 
 - Responsividade (MobFirst)
 - Animações CSS
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/t6oXawNk3g85ty9Ahg1I5Z/Explore-sem-limites-(Copy)?type=design&mode=design>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-<img alt="Layout Figma" src="./assets/layout-figma.png" width="100%">
